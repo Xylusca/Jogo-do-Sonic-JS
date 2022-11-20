@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.game-board{
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87ceeb, #e6f6ff);
+    
+}
+.grama{
+   width: 100%; 
+   position: relative;
+   background-repeat: repeat-y;
+   animation: grama-animacao 1.5s infinite linear;
+}
+.nuvens{
+    position: absolute;
+    width: 450px;
+    animation: nuvens-animacao 20s infinite linear;
+}
+
+.vilao{
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: vilao-animacao 1.5s infinite linear;
+
+}
+.arvores{
+    position: absolute;
+    bottom: 0;
+    width: 600px;
+    animation: arvore-animacao 5s infinite linear;
+}
+
+.sonic{
+    width: 100px;
+    position: absolute;
+    bottom: -5px;
+    left: 25px;
+    
+}
+
+.jump{
+    animation: jump 500ms ease-out;
+    src: url(img/pulo_2.gif);
+    width: 100px;
+}
+
+@keyframes vilao-animacao {
+    from {
+        right: -80px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+@keyframes arvore-animacao {
+    from {
+        right: -600px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+
+/* @keyframes grama-animacao {
+    from {
+        right: -00px;
+    }
+    to{
+        right: 10%;
+    }
+}  */
+
+@keyframes jump {
+ 0%{
+    bottom: 0px;
+ }
+ 40%{
+    bottom: 100px;
+ }   
+ 50%{
+    bottom: 100px;
+ }
+ 60%{
+    bottom: 100px;
+ }
+ 100%{
+    bottom: 0px;
+ }
+}
+
+@keyframes nuvens-animacao {
+    from {
+        right: -470px;
+    }
+    to {
+        right: 100%;
+    }
+}
