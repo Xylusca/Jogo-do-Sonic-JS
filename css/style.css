@@ -1,111 +1,158 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
-.game-board{
+body {
+    background-color: rgb(68, 68, 61);
+}
+
+.container {
+    width: 800px;
+    margin: 60px auto;
+}
+
+@media (max-width: 767px) {
+    .container {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+.steps-counter {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 24px;
+}
+
+.steps {
+    font-weight: bold;
+}
+
+.game-board {
     width: 100%;
     height: 500px;
+    border-radius: 15px 15px 0 0;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
     background: linear-gradient(#87ceeb, #e6f6ff);
-    
+
 }
-.grama{
-   width: 100%; 
-   position: relative;
-   background-repeat: repeat-y;
-   animation: grama-animacao 1.5s infinite linear;
+
+.grama {
+    width: 100%;
+    border-radius: 0 0 15px 15px;
+    position: relative;
+    background-repeat: repeat-y;
+    background-size: contain;
 }
-.nuvens{
+
+@keyframes grama-animacao {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+.nuvens {
     position: absolute;
-    width: 450px;
+    margin-top: 20px;
+    width: 300px;
     animation: nuvens-animacao 20s infinite linear;
 }
 
-.vilao{
+.vilao {
     position: absolute;
     bottom: 0;
     width: 80px;
     animation: vilao-animacao 1.5s infinite linear;
 
 }
-.arvores{
+
+.arvores {
     position: absolute;
     bottom: 0;
     width: 600px;
     animation: arvore-animacao 5s infinite linear;
 }
 
-.sonic{
+.sonic {
     width: 100px;
     position: absolute;
     bottom: -5px;
     left: 25px;
-    
+
 }
 
-.jump{
+.jump {
     animation: jump 500ms ease-out;
     src: url(img/pulo_2.gif);
     width: 100px;
 }
+
 
 @keyframes vilao-animacao {
     from {
         right: -80px;
     }
 
-    to{
+    to {
         right: 100%;
     }
 }
+
 @keyframes arvore-animacao {
     from {
         right: -600px;
     }
 
-    to{
+    to {
         right: 100%;
     }
 }
 
-
-/* @keyframes grama-animacao {
-    from {
-        right: -00px;
-    }
-    to{
-        right: 10%;
-    }
-}  */
-
 @keyframes jump {
- 0%{
-    bottom: 0px;
- }
- 40%{
-    bottom: 100px;
- }   
- 50%{
-    bottom: 100px;
- }
- 60%{
-    bottom: 100px;
- }
- 100%{
-    bottom: 0px;
- }
+    0% {
+        bottom: 0px;
+    }
+
+    40% {
+        bottom: 100px;
+    }
+
+    50% {
+        bottom: 100px;
+    }
+
+    60% {
+        bottom: 100px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
 }
 
 @keyframes nuvens-animacao {
     from {
         right: -470px;
     }
+
     to {
         right: 100%;
     }
+}
+
+.nuvens,
+.arvores,
+.sonic,
+.vilao {
+    animation-play-state: paused;
 }
