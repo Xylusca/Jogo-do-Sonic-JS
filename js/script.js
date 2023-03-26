@@ -90,15 +90,14 @@ document.addEventListener('keydown', (event) => {
 
          // Trocando as imagens dos elementos HTML para imagens estáticas de "parada"
          vilao.src = 'img/vilao_parado.png';
-         vilao.style.width = '70px';
-         vilao.style.marinleft = '70px';
+         sonic.style.width = '90px';
+         sonic.style.marinleft = '90px';
 
          sonic.src = 'img/sonic_dead.png';
          sonic.style.width = '90px';
          sonic.style.marinleft = '90px';
 
-         arvores.src = 'img/arvores_parado.png';
-         arvores.style.width = '100%';
+         elements[1].style.animationPlayState = 'paused';
 
          // Parando a execução da função setInterval
          clearInterval(loop);
