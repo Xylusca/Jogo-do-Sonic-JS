@@ -53,12 +53,13 @@ body {
 }
 
 @keyframes grama-animacao {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 100% 0;
-  }
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 100% 0;
+    }
 }
 
 .nuvens {
@@ -93,7 +94,6 @@ body {
 
 .jump {
     animation: jump 500ms ease-out;
-    src: url(img/pulo_2.gif);
     width: 100px;
 }
 
@@ -155,4 +155,38 @@ body {
 .sonic,
 .vilao {
     animation-play-state: paused;
+}
+
+/* Estilo do modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.modal.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.restart-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }

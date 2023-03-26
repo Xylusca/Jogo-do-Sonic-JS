@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="css/style.css">
-    <script  defer src="js/script.js"></script>
+    <script defer src="js/script.js"></script>
     <title>Sonic</title>
 </head>
-
 <body>
     <div class="container">
         <div class="game-board">
             <div class="info steps-counter">
                 <p>Passos: <span class="steps ">0</span></p>
                 <p>Recorde: <span class="record">0</span></p>
-                <p class="message"></p>
             </div>
-
+            <div class="modal">
+                <div class="message">
+                   <h2>Game over!</h2>
+                   <p>Sua pontuação foi: <span class="steps"></span></p>
+                   <button class="restart-btn">Jogar novamente</button>
+                </div>
+             </div>
             <img class="arvores" src="img/arvore.png" alt="">
             <img class="nuvens" src="img/nuvens.png" alt="">
             <img class="sonic" src="img/sonic.gif" alt="">
@@ -29,5 +31,4 @@
         <img class="grama" src="img/grama.png" alt="">
     </div>
 </body>
-
 </html>
