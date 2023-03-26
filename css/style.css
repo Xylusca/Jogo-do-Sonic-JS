@@ -20,6 +20,17 @@ body {
         width: 100%;
     }
 }
+@media (max-width: 767px) {
+    .sonic {
+      width: 50px;
+    }
+  
+    .vilao {
+      width: 40px;
+    }
+  }
+  
+
 
 .steps-counter {
     position: absolute;
