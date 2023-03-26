@@ -120,7 +120,7 @@ document.addEventListener('keydown', (event) => {
       // Incrementando a pontuação do jogador em 1 a cada iteração do loop
       stepsCounter.textContent = +stepsCounter.textContent + 1;
 
-   }, 10);
+   }, 100);
 });
 
 
