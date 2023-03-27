@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: 'Press Start 2P', cursive;
 }
 
 body {
@@ -34,16 +34,18 @@ body {
 
 
 .steps-counter {
-    z-index: 100;
+    z-index: 2;
     position: absolute;
     top: 20px;
     left: 20px;
-    color: white;
-    font-size: 24px;
+    color: #000000;
+    font-size: 18px;
+    padding: 20px;
+    background-color: #ffffff4b;
+    border-radius: 30px;
 }
-
-.steps {
-    font-weight: bold;
+.steps-counter p {
+    margin: 10px 0;
 }
 
 .game-board {
@@ -181,6 +183,10 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
+.modal h2{
+    margin-top: 15px;
+}
+
 
 .modal.show {
     display: flex;
@@ -189,17 +195,21 @@ body {
 }
 
 .message {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
+    background-color: #ffffffcc;
+    padding: 50px;
+    border-radius: 15px;
     text-align: center;
 }
 
 .restart-btn {
-    background-color: #4CAF50;
+    background-color: #213fc3c5;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    margin-top: 50px;
+    padding: 20px 25px;
     border-radius: 5px;
     cursor: pointer;
+}
+.restart-btn:hover{
+    background-color: #002fffe7;
 }
