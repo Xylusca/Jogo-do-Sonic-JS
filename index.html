@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/sonic-icon-17.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <script defer src="js/script.js"></script>
     <title>Jogo do Sonic</title>
 </head>
+
 <body>
     <div class="container">
         <div class="game-board">
             <div class="info steps-counter">
+                 <p>Recorde: <span class="record">0</span></p>
                 <p>Passos: <span class="steps ">0</span></p>
-                <p>Recorde: <span class="record">0</span></p>
             </div>
             <div class="modal">
                 <div class="message">
-                   <h2>Game over!</h2>
-                   <p>Sua pontuação foi: <span class="steps"></span></p>
-                   <button class="restart-btn">Jogar novamente</button>
+                    <h2>Game over!</h2>
+                    <h2>Pontuação: <span class="steps"></span></h2>
+                    <button class="restart-btn">Jogar novamente</button>
                 </div>
-             </div>
+            </div>
             <img class="arvores" src="img/arvore.png" alt="">
             <img class="nuvens" src="img/nuvens.png" alt="">
             <img class="sonic" src="img/sonic.gif" alt="">
@@ -31,4 +36,5 @@
         <img class="grama" src="img/grama.png" alt="">
     </div>
 </body>
+
 </html>
