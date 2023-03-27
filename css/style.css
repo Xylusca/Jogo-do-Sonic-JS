@@ -16,23 +16,25 @@ body {
 
 @media (max-width: 767px) {
     .container {
-        margin: 0;
-        width: 100%;
+        margin: 5px auto;
+        width: 96%;
+        
     }
+    .vilao.small {
+        width: 60px;
+        animation: vilao-animacao 1.3s infinite linear;
+
+    }
+    .sonic.small {
+        width: 80px;
+    }
+
 }
-@media (max-width: 767px) {
-    .sonic {
-      width: 50px;
-    }
-  
-    .vilao {
-      width: 40px;
-    }
-  }
-  
+
 
 
 .steps-counter {
+    z-index: 100;
     position: absolute;
     top: 20px;
     left: 20px;
