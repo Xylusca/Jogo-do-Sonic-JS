@@ -3,6 +3,7 @@ const sonic = document.querySelector('.sonic');
 const vilao = document.querySelector('.vilao');
 const arvores = document.querySelector('.arvores');
 const stepsCounter = document.querySelector('.steps');
+var inicio = document.querySelector(".modal-inicio");
 let contador = false;
 
 // Obtendo a pontuação recorde do jogador armazenada em localStorage ou definindo como 0 se não houver
@@ -15,8 +16,6 @@ recordCounter.textContent = record;
 // Função que faz o Sonic pular adicionando a classe 'jump' à lista de classes do elemento HTML correspondente
 const jump = () => {
    sonic.classList.add('jump');
-   // sonic.src = './img/pulo_2.gif';
-   // sonic.style.width = '100px';
 
    // Removendo a classe 'jump' da lista de classes do elemento HTML correspondente após 500 milissegundos
    setTimeout(() => {
@@ -29,7 +28,8 @@ const handleJump = (event) => {
 
    // Verificando se o evento foi acionado pela tecla espaço ou pelo clique do botão esquerdo do mouse
    if (event.code === 'Space' || event.type === 'click') {
-
+      
+      inicio.style.display = "none";
       jump();
       // Selecionando todos os elementos HTML com as classes 'nuvens', 'arvores', 'sonic' e 'vilao' e colocando a animação em execução novamente
       var elements = document.querySelectorAll('.nuvens, .arvores, .sonic, .vilao');
@@ -37,6 +37,7 @@ const handleJump = (event) => {
          elements[i].style.animationPlayState = 'running';
       }
       contador = true
+
    }
 };
 
@@ -52,9 +53,6 @@ const loop = setInterval(() => {
    const vilaoPosition = vilao.offsetLeft;
    const arvoresPosition = arvores.offsetLeft;
    const sonicPosition = +window.getComputedStyle(sonic).bottom.replace('px', '');
-   // Imprimindo a posição do vilão no console para fins de depuração
-   // console.log(vilaoPosition)
-
 
    // código a ser executado se a largura da tela for maior ou igual que 768 pixels
 

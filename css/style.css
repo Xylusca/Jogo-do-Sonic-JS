@@ -172,7 +172,7 @@ body {
     animation-play-state: paused;
 }
 
-/* Estilo do modal */
+/* Estilo do modal game over */
 .modal {
     display: none;
     position: fixed;
@@ -212,4 +212,36 @@ body {
 }
 .restart-btn:hover{
     background-color: #002fffe7;
+}
+
+/* Estilo do modal inicio */
+.modal-inicio{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+.modal-inicio.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-inicio h2{
+    margin-top: 20px;
+}
+
+.message-inicio {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+}
+.message-inicio h2 span {
+    color: #002fffe7;
 }
