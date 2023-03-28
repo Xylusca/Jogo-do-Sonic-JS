@@ -8,7 +8,7 @@ Este é um jogo do Sonic desenvolvido em JavaScript, CSS e HTML, com imagens obt
     <li>JavaScript</li>
 </ul>
 <h2>Como jogar:</h2>
-Para jogar, basta acessar o link https://xylusca.github.io/Jogo-do-Sonic-JS/ ou baixar o jogo através do Github.
+Para jogar, basta acessar o github pages ou baixar o jogo através do Github.
 O objetivo do jogo é desviar do vilão, que é um caranguejo, e tentar obter o maior recorde de passos.
 O jogo pode ser jogado com o teclado pressionando a barra de espaço ou clicando com o mouse.
 O jogo é totalmente responsivo e pode ser jogado em dispositivos móveis.
