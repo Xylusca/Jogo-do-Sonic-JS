@@ -13,9 +13,13 @@ O objetivo do jogo é desviar do vilão, que é um caranguejo, e tentar obter o 
 O jogo pode ser jogado com o teclado pressionando a barra de espaço ou clicando com o mouse.
 O jogo é totalmente responsivo e pode ser jogado em dispositivos móveis.
 <h2>Funcionalidades extras</h2>
-- Totalmente responsivo para dispositivos móveis
-- Imagens obtidas do site https://www.deviantart.com/
-- Recorde de passos
+<ul>
+    <li>Totalmente responsivo para dispositivos móveis</li>
+    <li>Contador de passos</li>
+    <li>Recorde de passos</li>
+    <li>Imagens obtidas do site https://www.deviantart.com/</li>
+    <li>Youtube: https://www.youtube.com/watch?v=r9buAwVBDhA&ab_channel=ManualdoDev<li>
+</ul>
 <h2>Contribuições</h2>
 Contribuições são bem-vindas! Caso queira sugerir melhorias, novas funcionalidades ou reportar algum bug, sinta-se livre para abrir uma issue ou pull request neste repositório.
 <h2>Autor</h2>
